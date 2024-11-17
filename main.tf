@@ -7,6 +7,7 @@ module "frontend" {
   env           = var.env
 }
 
+
 module "backend" {
   source        = "./modules/app"
   instance_type = var.instance_type
@@ -15,6 +16,7 @@ module "backend" {
   ssh_pass      = var.ssh_pass
   env           = var.env
 }
+
 
 module "mysql" {
   source        = "./modules/app"
